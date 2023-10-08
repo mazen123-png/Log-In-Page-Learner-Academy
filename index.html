@@ -13,7 +13,7 @@
 
                         <nav>
                                 <div class="brand">
-                                       <img src="./logo/Logo.png" width="100" height="100" alt=""> 
+                                       <img src="./Logo.png" width="100" height="100" alt=""> 
                                 </div>
                                 <i id="toggleIcon" class="fa fa-list"></i>
                                 <ul class="menu-list" id="menu-list">
@@ -38,7 +38,7 @@
                                         <h2>We forgot you!!</h2>
                                 </div>
                                 <div>
-                                        <img src="./logo/Logo.png" alt="">
+                                        <img src="./Logo.png" alt="">
                                 </div>
                         </div>
                         <div>
@@ -80,70 +80,3 @@
         <script src="./main.js"></script>
 </body>
 </html>
-<!--
-        // Online C++ compiler to run C++ program online
-        #include <iostream>
-        using namespace std;
-        int choice;
-
-        class Companies{
-        private:
-                string companyName;
-                int companySalary;
-                string companyLevel;
-                string yourCompanyPosition;
-        public:
-                void getUserDetails(string inputDetail,string outputDetail){
-                        cout << "enter your company " << outputDetail << ": ";
-                        cin >> inputDetail;
-                        
-                }
-                void Set(){
-                        getUserDetails(companyName,"name");
-                        
-                        getUserDetails(companyLevel,"level");
-                        getUserDetails(yourCompanyPosition,"position");
-                        cout << "enter your company salary: ";
-                        cin >> companySalary;
-                        
-                        cout << "Company Added Succefully!!";
-                        
-                        
-                }
-        };
-        void choices();
-        void anotherOptions();
-        void printoptions(){
-        cout << "1-Add A Company\n2-Update A Company\n3-Delete A Company\n4-Exit"<<endl;
-        choices();
-        }
-        void choices(){
-        cin >> choice;
-        if(choice == 1){
-                
-                Companies comp1;
-                comp1.Set();
-        }else if(choice == 2){
-                
-        }else if(choice == 3){
-                
-        }else anotherOptions();
-        }
-        void anotherOptions(){
-        cout << "do you want to enter another function??(yes | no) ";
-        string chooseAgain;
-        cin >> chooseAgain;
-        if(chooseAgain == "yes" || chooseAgain == "Yes" ||  chooseAgain[0] == 'y'){
-                printoptions();
-        
-        }else exit;
-        }
-        int main() {
-        
-        cout << "Hello in our Application for managing your companies"<<endl;
-        printoptions();
-        
-        
-        return 0;
-        }
--->
