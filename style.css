@@ -1,0 +1,269 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body{
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #01415a;
+}
+header{
+        position: fixed;
+        right: 0;
+        left: 0;
+        background-color: #00abf0;
+        min-height: 97px;
+        z-index: 999;
+}
+nav{
+        margin: 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+nav .menu-list{
+        display: flex;
+        padding: 8px 0;
+        margin-right: 3%;
+        width: 100%;
+}
+
+nav .menu-list li{
+        position: relative;
+        list-style: none;
+        width: 100%;
+        left: 45px;
+        min-height: 50px;
+        padding: 20px 5px;
+}
+.About-nav-link{
+        margin-left: 30px;
+}
+nav .menu-list li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        text-transform: capitalize;
+        letter-spacing: .7px;
+        transition: .5s;
+}
+nav .menu-list li a:hover{
+        color: #ddd;
+}
+
+.search{
+        border-left: 2px solid #01415a;
+        margin-right: 5px;
+        margin-left: -20px;
+}
+.search i,.fa-list,.fa-circle-xmark{
+        padding-left: 20px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        
+}
+.fa-list,.fa-circle-xmark{
+        font-size: 30px;
+        position: relative;
+        color: #01415a;
+        transition: .5s;
+}
+.fa-circle-xmark:hover{
+        color: #ddd;  
+}
+.signUp,.LogIn{
+        background-color: #025474;
+        color: #fff;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 8px;
+        border-radius: 4px;
+        font-family: sans-serif;
+}
+.signUp:hover,.LogIn:hover{
+        background-color: #333;
+}
+@media (max-width:1000px) {
+        nav .menu-list{
+                display: none;
+        }
+        .menu-list nav ul li{
+                border-bottom: 3px solid #025474;
+                cursor: pointer;
+        }
+        nav .menu-list li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background-color: #72cbee;
+                position: absolute;
+                bottom: -2px;
+                z-index: 2;
+                left: 3%;
+        }
+        
+        nav .menu-list li:hover{
+                background-color: #01415a;
+        }
+        nav .menu-list li:hover::after,.active::after{
+                width: 10%;
+                
+                color: #fff;
+        }
+        
+}
+@media (min-width:1000px) {
+        .fa-list,.fa-circle-xmark{
+                display: none;
+        }
+        nav .menu-list{
+                display: flex;
+        }
+        .contactNavLink{
+                margin-left: -20px;
+        }
+}
+
+@media (max-width:375px) {
+        nav{
+                margin: 0 10px;
+        }
+}
+main{
+        padding: 200px 200px;
+}
+main .LoginPage > div > div >h2{
+        font-size: 32px;
+        color: #fff;
+        margin-left: 10%;
+}
+.LoginPage{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+.logInSection{
+        height: 450px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 100px 0 50px;
+        margin: -50px -80px 0 0;
+        text-align: center;
+        background-color: #72cbee;
+        border-top: 3px solid #c3139a;
+        border-right: 3px solid #c3139a;
+        border-bottom: 3px solid #00abf0;
+        border-left: 4px solid #00abf0;
+}
+.logInSection > div >h2{
+        color: #fff;
+        padding-top: 30px;
+        margin-bottom: -50px;
+        font-size: 32px;
+}
+.form form{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 30%;
+}
+.form > form > .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+.form > form > .inputs input{
+        width: 300px;
+        height:30px;
+        padding: 10px 5px;
+        outline: none;
+        font-size: 18px;
+}
+.form > form >.forgotPassword{
+        display: flex;
+        width: 100%;
+}
+.form > form >.forgotPassword a{
+        margin-right: 10%;
+        min-width: 150px;
+        text-decoration: none;
+        color: #025474;
+        text-transform: capitalize;
+}
+.form > form >.forgotPassword a:hover{
+        color: #01415a;
+        text-decoration: underline;
+}
+.form > form >.forgotPassword .keepSignIn{
+        margin-left: 10%;
+        min-width: 150px;
+}
+.form > form >.forgotPassword .keepSignIn input[type="checkbox"]:checked~label{
+        color: #025474;
+}
+.submitbtn,.submitbtn > div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        align-items: center;
+}
+.submitbtn > div a{
+        color: #333;
+}
+
+.submitbtn button{
+        border-radius: 4px;
+        color: #00abf0;
+        background-color: #025474;
+        font-size: 24px;
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .5s;
+        text-transform: capitalize;
+        width: 50%;
+}
+.submitbtn button:hover{
+        background-color: #01415a;
+}
+.submitbtn div a:hover{
+        color: #025474;
+}
+@media (max-width:1000px) {
+        main{
+                padding:200px 90px;
+        }
+        .logInSection{
+                margin: -50px 0 0 -30px;
+        }
+}
+
+@media (max-width:531px) {
+        .logInSection{
+                margin: -50px 0 0 -50px;
+        }
+}
+@media (max-width:505px) {
+        .logInSection{
+                margin: -50px 0 0 -80px;
+        }
+}
+
+@media (max-width:490px) {
+        body{
+                overflow-x: hidden;
+        }
+        .LoginPage{
+                justify-content: center;
+        }
+        .logInSection{
+                margin-left: 1%;
+                padding: 0 100px 0 30px;
+        }
+}
